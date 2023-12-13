@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <!--further config-->
+    <head>
+        <Title>Note Taker</Title>
+        <link rel="icon" type="" href="./images/favicon.png">
+        <link href="./styles/styles.css" rel="stylesheet"></link>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <h1 class="header__title">Notetaker</h1> 
+                <h2 class="header__subtitle">Take Notes and Never Forget</h2>
+            </div>
+        </header>
+        <!-- div stands for content division: intended to be used to segment content -->
+        <div class="actions">
+            <div class="actions__container">
+                <input class="input" id="search-text" type="text" placeholder="filter">
+                <!--create dropdown-->
+                <select class="dropdown" id="filter-by">
+                    <!-- use the value tag to override the string value as the element value -->
+                    <option value="byEdited">Sort by last edited</option>
+                    <option value="byCreated">Sort by recently created</option>
+                    <option value="alphabetical">Sort alphabetically (by title)</option>
+                </select>
+            </div>
+        </div>
+        <div class="container">
+            <div id="notes"></div>
+            <button class="button" id="create-note">Create Note</button>
+        </div>
+        <script src="./scripts/index_bundle.js"></script>
+    </body>
+</html>

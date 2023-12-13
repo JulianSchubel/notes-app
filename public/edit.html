@@ -1,0 +1,27 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <link rel="stylesheet" type="" href="./styles/styles.css">
+        <link rel="icon" type="" href="./images/favicon.png">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <h1 class="header__title">Notetaker</h1> 
+                <h2 class="header__subtitle">Take Notes and Never Forget</h2>
+            </div>
+        </header>
+        <div class="actions">
+            <div class="actions__container actions__container--spaced">
+                <button class="button" id="return-from-edit">Return</button>
+                <span id="note-update-time"></span>
+            </div>   
+        </div>
+        <div class="container">
+            <input class="title-input" id="note-title" type="text" placeholder="Note title">
+            <textarea class="body-input" id="note-body" placeholder="Note body"></textarea>
+            <button class="button button--secondary" id="delete-note">Delete</button>
+        </div>
+    </body>
+    <script src="./scripts/edit_bundle.js"></script>
+</html>
